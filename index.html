@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UNISOAR Baby Sling Ring - 23 Colors | Wrap Carrier for Newborns</title>
+    <title>UNISOAR Baby Sling Ring | DIY Wrap Carrier for Newborns</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.6; color: #334155; background: #fff; }
@@ -47,7 +47,7 @@
         .product-color { font-size: 0.85rem; color: #e11d48; margin-bottom: 0.5rem; font-weight: 500; }
         .product-price { font-size: 1.35rem; color: #e11d48; font-weight: 700; }
         .product-price .unit { font-size: 0.8rem; color: #94a3b8; font-weight: 400; }
-        .inquiry-btn { display: block; margin-top: 0.75rem; padding: 0.6rem; background: #fff1f2; color: #e11d48; border-radius: 8px; font-size: 0.85rem; font-weight: 600; text-decoration: none; transition: all 0.2s; }
+        .inquiry-btn { display: block; margin-top: 0.75rem; padding: 0.6rem; background: #fff1f2; color: #e11d48; border-radius: 8px; font-size: 1rem; font-weight: 600; text-decoration: none; transition: all 0.2s; }
         .inquiry-btn:hover { background: #e11d48; color: white; }
 
         /* 询盘区 */
@@ -63,6 +63,20 @@
         .form-group.full-width { grid-column: 1 / -1; }
         .submit-btn { width: 100%; padding: 1rem; background: #e11d48; color: white; border: none; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: background 0.2s; }
         .submit-btn:hover { background: #be123c; }
+        .submit-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+        /* 状态提示 */
+        .status-msg {
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            text-align: center;
+            display: none;
+        }
+        .status-msg.show { display: block; }
+        .status-msg.success { background: #dcfce7; color: #166534; border: 1px solid #86efac; }
+        .status-msg.error { background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
 
         .direct-contact { text-align: center; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid #f1f5f9; }
         .direct-contact p { color: #64748b; font-size: 0.9rem; margin-bottom: 0.75rem; }
@@ -92,7 +106,7 @@
 </head>
 <body>
 
-<nav>
+<<nav>
     <div class="nav-container">
         <a href="#" class="logo">
             <div class="logo-icon">👶</div>
@@ -105,12 +119,12 @@
 <!-- Hero -->
 <div class="hero">
     <h1>UNISOAR Baby Sling Ring</h1>
-    <p>Comfortable, safe, and stylish wrap carriers for newborns. 23 beautiful colors to match every parent's style.</p>
+    <p>Beautiful color, Excellent quality,Made of light weight aluminium,Verified by SGS.</p>
     <div class="hero-badges">
-        <div class="hero-badge">✓ Soft Cotton Fabric</div>
-        <div class="hero-badge">✓ Aluminum Safety Ring</div>
-        <div class="hero-badge">✓ 0-36 Months</div>
-        <div class="hero-badge">✓ Machine Washable</div>
+        <div class="hero-badge">✓ Color not fade,durable</div>
+        <div class="hero-badge">✓ Strong and safe</div>
+        <div class="hero-badge">✓ One piece,no weld line</div>
+        <div class="hero-badge">✓ Heavy metal and toxin free</div>
     </div>
 </div>
 
@@ -118,8 +132,8 @@
 <div class="features-bar">
     <div class="features-container">
         <div class="feature-item">
-            <span>🧵</span>
-            <span>100% Premium Cotton</span>
+            <span>✂</span>
+            <span>DIY Wrap Carrier</span>
         </div>
         <div class="feature-item">
             <span>💪</span>
@@ -127,11 +141,11 @@
         </div>
         <div class="feature-item">
             <span>👶</span>
-            <span>Ergonomic M-Position</span>
+            <span>SGS Certified</span>
         </div>
         <div class="feature-item">
             <span>🌈</span>
-            <span>23 Color Options</span>
+            <span>Colorful Options</span>
         </div>
         <div class="feature-item">
             <span>🚚</span>
@@ -140,313 +154,279 @@
     </div>
 </div>
 
-<!-- 23 Colors -->
+<!-- 22 Colors -->
 <div class="section">
     <div class="section-header">
-        <h2>🎨 23 Colors Available</h2>
-        <p>Choose the perfect color for you and your baby</p>
+        <h2>🎨 Colors Available</h2>
     </div>
     <div class="products-grid">
-        <div class="product-card" onclick="selectColor('Midnight Black')">
-            <!-- 修改点：使用 img 标签替换纯背景色 div -->
-            <div class="product-img-container" style="position: relative; height: 200px; overflow: hidden; border-radius: 8px;">
-                <img src="images/Gold.jpg" 
-                     alt="Midnight Black Baby Sling" 
-                     style="width: 100%; height: 100%; object-fit: cover;">
-                <!-- 可选：保留颜色标签在图片右上角 -->
-                <span class="color-tag" style="position: absolute; top: 10px; right: 10px; background: rgba(0,0,0,0.6); color: white; padding: 2px 6px; border-radius: 4px; font-size: 12px;">#01</span>
+        <div class="product-card" onclick="selectColor('DIY Wrap and Carrier')">
+            <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
+                <img src="images/DIY Wrap and Carrier.jpg" alt="DIY Wrap and Carrier" style="width: 100%; height: 100%; object-fit: cover;">
+                <span class="color-tag">#DIY Wrap Carrier</span>
             </div>
             <div class="product-info">
-                <div class="product-name">Baby Sling Ring</div>
-                <div class="product-color">Midnight Black</div>
-                <div class="product-price">$12.99 <span class="unit">/ pc</span></div>
-                <span class="inquiry-btn">Inquire This Color</span>
+                <span class="inquiry-btn">Inquire</span>
             </div>
         </div>
 
-        <div class="product-card" onclick="selectColor('Pure White')">
-            <div class="product-img" style="background: #f8fafc; border: 1px solid #e2e8f0;">
-                <span style="color: #334155; font-weight: 600;">Pure White</span>
-                <span class="color-tag">#02</span>
+        <div class="product-card" onclick="selectColor('SGS1')">
+            <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
+                <img src="images/baby sling rings 1.jpg" alt="SGS1" style="width: 100%; height: 100%; object-fit: cover;">
+                <span class="color-tag">#SGS RoHS Test: Lead and Nickle Free</span>
             </div>
             <div class="product-info">
-                <div class="product-name">Baby Sling Ring</div>
-                <div class="product-color">Pure White</div>
-                <div class="product-price">$12.99 <span class="unit">/ pc</span></div>
-                <span class="inquiry-btn">Inquire This Color</span>
+                <span class="inquiry-btn">Inquire</span>
             </div>
         </div>
 
-        <div class="product-card" onclick="selectColor('Soft Gray')">
-            <div class="product-img" style="background: #9ca3af;">
-                <span style="color: white; font-weight: 600;">Soft Gray</span>
-                <span class="color-tag">#03</span>
+        <div class="product-card" onclick="selectColor('SGS2')">
+            <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
+                <img src="images/baby sling rings 2.jpg" alt="SGS2" style="width: 100%; height: 100%; object-fit: cover;">
+                <span class="color-tag">#SGS Tensile Test:Max Force 11.80KN</span>
             </div>
             <div class="product-info">
-                <div class="product-name">Baby Sling Ring</div>
-                <div class="product-color">Soft Gray</div>
-                <div class="product-price">$12.99 <span class="unit">/ pc</span></div>
-                <span class="inquiry-btn">Inquire This Color</span>
+                <span class="inquiry-btn">Inquire</span>
             </div>
         </div>
 
-        <div class="product-card" onclick="selectColor('Dusty Rose')">
-            <div class="product-img" style="background: #fda4af;">
-                <span style="color: white; font-weight: 600;">Dusty Rose</span>
-                <span class="color-tag">#04</span>
+        <div class="product-card" onclick="selectColor('Size')">
+            <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
+                <img src="images/Size.jpg" alt="Size" style="width: 100%; height: 100%; object-fit: cover;">
+                <span class="color-tag">#Size: Large Size inner 3 inch<br>Medium Size inner 2.5 inch<br>Small Size inner 2 inch</span>
             </div>
             <div class="product-info">
-                <div class="product-name">Baby Sling Ring</div>
-                <div class="product-color">Dusty Rose</div>
-                <div class="product-price">$12.99 <span class="unit">/ pc</span></div>
-                <span class="inquiry-btn">Inquire This Color</span>
+                <span class="inquiry-btn">Inquire</span>
             </div>
         </div>
 
-        <div class="product-card" onclick="selectColor('Blush Pink')">
-            <div class="product-img" style="background: #fbcfe8;">
-                <span style="color: #881337; font-weight: 600;">Blush Pink</span>
-                <span class="color-tag">#05</span>
+        <div class="product-card" onclick="selectColor('Color')">
+            <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
+                <img src="images/Color.jpg" alt="Color" style="width: 100%; height: 100%; object-fit: cover;">
+                <span class="color-tag">#Colors</span>
             </div>
             <div class="product-info">
-                <div class="product-name">Baby Sling Ring</div>
-                <div class="product-color">Blush Pink</div>
-                <div class="product-price">$12.99 <span class="unit">/ pc</span></div>
-                <span class="inquiry-btn">Inquire This Color</span>
+                <span class="inquiry-btn">Inquire</span>
             </div>
         </div>
 
-        <div class="product-card" onclick="selectColor('Coral Red')">
-            <div class="product-img" style="background: #f87171;">
-                <span style="color: white; font-weight: 600;">Coral Red</span>
-                <span class="color-tag">#06</span>
+        <div class="product-card" onclick="selectColor('Gold')">
+            <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
+                <img src="images/Gold.jpg" alt="Gold" style="width: 100%; height: 100%; object-fit: cover;">
+                <span class="color-tag">#01 Gold</span>
             </div>
             <div class="product-info">
-                <div class="product-name">Baby Sling Ring</div>
-                <div class="product-color">Coral Red</div>
-                <div class="product-price">$12.99 <span class="unit">/ pc</span></div>
-                <span class="inquiry-btn">Inquire This Color</span>
+                <span class="inquiry-btn">Inquire</span>
+            </div>
+        </div>
+        
+        <div class="product-card" onclick="selectColor('Pink')">
+            <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
+                <img src="images/Pink.jpg" alt="Pink" style="width: 100%; height: 100%; object-fit: cover;">
+                <span class="color-tag">#02 Pink</span>
+            </div>
+            <div class="product-info">
+                <span class="inquiry-btn">Inquire</span>
             </div>
         </div>
 
-        <div class="product-card" onclick="selectColor('Burnt Orange')">
-            <div class="product-img" style="background: #fb923c;">
-                <span style="color: white; font-weight: 600;">Burnt Orange</span>
-                <span class="color-tag">#07</span>
+        <div class="product-card" onclick="selectColor('Shinny Gold')">
+            <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
+                <img src="images/Shinny-Gold.jpg" alt="Shinny Gold" style="width: 100%; height: 100%; object-fit: cover;">
+                <span class="color-tag">#03 Shinny Gold</span>
             </div>
             <div class="product-info">
-                <div class="product-name">Baby Sling Ring</div>
-                <div class="product-color">Burnt Orange</div>
-                <div class="product-price">$12.99 <span class="unit">/ pc</span></div>
-                <span class="inquiry-btn">Inquire This Color</span>
+                <span class="inquiry-btn">Inquire</span>
             </div>
         </div>
 
-        <div class="product-card" onclick="selectColor('Mustard Yellow')">
-            <div class="product-img" style="background: #facc15;">
-                <span style="color: #713f12; font-weight: 600;">Mustard Yellow</span>
-                <span class="color-tag">#08</span>
+        <div class="product-card" onclick="selectColor('Yellow')">
+            <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
+                <img src="images/Yellow.jpg" alt="Yellow" style="width: 100%; height: 100%; object-fit: cover;">
+                <span class="color-tag">#04 Yellow</span>
             </div>
             <div class="product-info">
-                <div class="product-name">Baby Sling Ring</div>
-                <div class="product-color">Mustard Yellow</div>
-                <div class="product-price">$12.99 <span class="unit">/ pc</span></div>
-                <span class="inquiry-btn">Inquire This Color</span>
+                <span class="inquiry-btn">Inquire</span>
             </div>
         </div>
 
-        <div class="product-card" onclick="selectColor('Sage Green')">
-            <div class="product-img" style="background: #86efac;">
-                <span style="color: #14532d; font-weight: 600;">Sage Green</span>
-                <span class="color-tag">#09</span>
+        <div class="product-card" onclick="selectColor('Red')">
+            <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
+                <img src="images/Red.jpg" alt="Red" style="width: 100%; height: 100%; object-fit: cover;">
+                <span class="color-tag">#06 Red</span>
             </div>
             <div class="product-info">
-                <div class="product-name">Baby Sling Ring</div>
-                <div class="product-color">Sage Green</div>
-                <div class="product-price">$12.99 <span class="unit">/ pc</span></div>
-                <span class="inquiry-btn">Inquire This Color</span>
+                <span class="inquiry-btn">Inquire</span>
             </div>
         </div>
 
-        <div class="product-card" onclick="selectColor('Forest Green')">
-            <div class="product-img" style="background: #15803d;">
-                <span style="color: white; font-weight: 600;">Forest Green</span>
-                <span class="color-tag">#10</span>
+        <div class="product-card" onclick="selectColor('Purple')">
+            <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
+                <img src="images/Purple.jpg" alt="Purple" style="width: 100%; height: 100%; object-fit: cover;">
+                <span class="color-tag">#07 Purple</span>
             </div>
             <div class="product-info">
-                <div class="product-name">Baby Sling Ring</div>
-                <div class="product-color">Forest Green</div>
-                <div class="product-price">$12.99 <span class="unit">/ pc</span></div>
-                <span class="inquiry-btn">Inquire This Color</span>
+                <span class="inquiry-btn">Inquire</span>
             </div>
         </div>
 
-        <div class="product-card" onclick="selectColor('Teal Blue')">
-            <div class="product-img" style="background: #2dd4bf;">
-                <span style="color: #134e4a; font-weight: 600;">Teal Blue</span>
-                <span class="color-tag">#11</span>
+        <div class="product-card" onclick="selectColor('Grey')">
+            <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
+                <img src="images/Grey.jpg" alt="Grey" style="width: 100%; height: 100%; object-fit: cover;">
+                <span class="color-tag">#08 Grey</span>
             </div>
             <div class="product-info">
-                <div class="product-name">Baby Sling Ring</div>
-                <div class="product-color">Teal Blue</div>
-                <div class="product-price">$12.99 <span class="unit">/ pc</span></div>
-                <span class="inquiry-btn">Inquire This Color</span>
+                <span class="inquiry-btn">Inquire</span>
             </div>
         </div>
 
-        <div class="product-card" onclick="selectColor('Navy Blue')">
-            <div class="product-img" style="background: #1e3a8a;">
-                <span style="color: white; font-weight: 600;">Navy Blue</span>
-                <span class="color-tag">#12</span>
+        <div class="product-card" onclick="selectColor('Shinny Silver')">
+            <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
+                <img src="images/Shinny-Silver.jpg" alt="Shinny Silver" style="width: 100%; height: 100%; object-fit: cover;">
+                <span class="color-tag">#09 Shinny Silver</span>
             </div>
             <div class="product-info">
-                <div class="product-name">Baby Sling Ring</div>
-                <div class="product-color">Navy Blue</div>
-                <div class="product-price">$12.99 <span class="unit">/ pc</span></div>
-                <span class="inquiry-btn">Inquire This Color</span>
+                <span class="inquiry-btn">Inquire</span>
             </div>
         </div>
 
-        <div class="product-card" onclick="selectColor('Sky Blue')">
-            <div class="product-img" style="background: #7dd3fc;">
-                <span style="color: #0c4a6e; font-weight: 600;">Sky Blue</span>
-                <span class="color-tag">#13</span>
+        <div class="product-card" onclick="selectColor('Dark Grey')">
+            <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
+                <img src="images/Dark-Grey.jpg" alt="Dark Grey" style="width: 100%; height: 100%; object-fit: cover;">
+                <span class="color-tag">#10 Dark Grey</span>
             </div>
             <div class="product-info">
-                <div class="product-name">Baby Sling Ring</div>
-                <div class="product-color">Sky Blue</div>
-                <div class="product-price">$12.99 <span class="unit">/ pc</span></div>
-                <span class="inquiry-btn">Inquire This Color</span>
+                <span class="inquiry-btn">Inquire</span>
             </div>
         </div>
 
-        <div class="product-card" onclick="selectColor('Lavender Purple')">
-            <div class="product-img" style="background: #c4b5fd;">
-                <span style="color: #4c1d95; font-weight: 600;">Lavender Purple</span>
-                <span class="color-tag">#14</span>
+        <div class="product-card" onclick="selectColor('Lime')">
+            <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
+                <img src="images/Lime.jpg" alt="Lime" style="width: 100%; height: 100%; object-fit: cover;">
+                <span class="color-tag">#11 Lime</span>
             </div>
             <div class="product-info">
-                <div class="product-name">Baby Sling Ring</div>
-                <div class="product-color">Lavender Purple</div>
-                <div class="product-price">$12.99 <span class="unit">/ pc</span></div>
-                <span class="inquiry-btn">Inquire This Color</span>
+                <span class="inquiry-btn">Inquire</span>
             </div>
         </div>
 
-        <div class="product-card" onclick="selectColor('Deep Purple')">
-            <div class="product-img" style="background: #7c3aed;">
-                <span style="color: white; font-weight: 600;">Deep Purple</span>
-                <span class="color-tag">#15</span>
+        <div class="product-card" onclick="selectColor('Green')">
+            <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
+                <img src="images/Green.jpg" alt="Green" style="width: 100%; height: 100%; object-fit: cover;">
+                <span class="color-tag">#12 Green</span>
             </div>
             <div class="product-info">
-                <div class="product-name">Baby Sling Ring</div>
-                <div class="product-color">Deep Purple</div>
-                <div class="product-price">$12.99 <span class="unit">/ pc</span></div>
-                <span class="inquiry-btn">Inquire This Color</span>
+                <span class="inquiry-btn">Inquire</span>
             </div>
         </div>
 
-        <div class="product-card" onclick="selectColor('Chocolate Brown')">
-            <div class="product-img" style="background: #78350f;">
-                <span style="color: white; font-weight: 600;">Chocolate Brown</span>
-                <span class="color-tag">#16</span>
+        <div class="product-card" onclick="selectColor('Light Pink')">
+            <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
+                <img src="images/Light-Pink.jpg" alt="Light Pink" style="width: 100%; height: 100%; object-fit: cover;">
+                <span class="color-tag">#13 Light Pink</span>
             </div>
             <div class="product-info">
-                <div class="product-name">Baby Sling Ring</div>
-                <div class="product-color">Chocolate Brown</div>
-                <div class="product-price">$12.99 <span class="unit">/ pc</span></div>
-                <span class="inquiry-btn">Inquire This Color</span>
+                <span class="inquiry-btn">Inquire</span>
             </div>
         </div>
 
-        <div class="product-card" onclick="selectColor('Tan Beige')">
-            <div class="product-img" style="background: #d6d3d1;">
-                <span style="color: #451a03; font-weight: 600;">Tan Beige</span>
-                <span class="color-tag">#17</span>
+        <div class="product-card" onclick="selectColor('Light Aqua')">
+            <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
+                <img src="images/Light-Aqua.jpg" alt="Light Aqua" style="width: 100%; height: 100%; object-fit: cover;">
+                <span class="color-tag">#14 Light Aqua</span>
             </div>
             <div class="product-info">
-                <div class="product-name">Baby Sling Ring</div>
-                <div class="product-color">Tan Beige</div>
-                <div class="product-price">$12.99 <span class="unit">/ pc</span></div>
-                <span class="inquiry-btn">Inquire This Color</span>
+                <span class="inquiry-btn">Inquire</span>
             </div>
         </div>
 
-        <div class="product-card" onclick="selectColor('Cream Ivory')">
-            <div class="product-img" style="background: #fef3c7;">
-                <span style="color: #78350f; font-weight: 600;">Cream Ivory</span>
-                <span class="color-tag">#18</span>
+        <div class="product-card" onclick="selectColor('Orange')">
+            <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
+                <img src="images/Orange.jpg" alt="Orange" style="width: 100%; height: 100%; object-fit: cover;">
+                <span class="color-tag">#15 Orange</span>
             </div>
             <div class="product-info">
-                <div class="product-name">Baby Sling Ring</div>
-                <div class="product-color">Cream Ivory</div>
-                <div class="product-price">$12.99 <span class="unit">/ pc</span></div>
-                <span class="inquiry-btn">Inquire This Color</span>
+                <span class="inquiry-btn">Inquire</span>
             </div>
         </div>
 
-        <div class="product-card" onclick="selectColor('Terracotta')">
-            <div class="product-img" style="background: #c2410c;">
-                <span style="color: white; font-weight: 600;">Terracotta</span>
-                <span class="color-tag">#19</span>
+        <div class="product-card" onclick="selectColor('Y Rose Gold')">
+            <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
+                <img src="images/Y-Rose-Gold.jpg" alt="Y Rose Gold" style="width: 100%; height: 100%; object-fit: cover;">
+                <span class="color-tag">#16 Y Rose Gold</span>
             </div>
             <div class="product-info">
-                <div class="product-name">Baby Sling Ring</div>
-                <div class="product-color">Terracotta</div>
-                <div class="product-price">$12.99 <span class="unit">/ pc</span></div>
-                <span class="inquiry-btn">Inquire This Color</span>
+                <span class="inquiry-btn">Inquire</span>
             </div>
         </div>
 
-        <div class="product-card" onclick="selectColor('Olive Green')">
-            <div class="product-img" style="background: #65a30d;">
-                <span style="color: white; font-weight: 600;">Olive Green</span>
-                <span class="color-tag">#20</span>
+        <div class="product-card" onclick="selectColor('Blue')">
+            <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
+                <img src="images/Blue.jpg" alt="Blue" style="width: 100%; height: 100%; object-fit: cover;">
+                <span class="color-tag">#17 Blue</span>
             </div>
             <div class="product-info">
-                <div class="product-name">Baby Sling Ring</div>
-                <div class="product-color">Olive Green</div>
-                <div class="product-price">$12.99 <span class="unit">/ pc</span></div>
-                <span class="inquiry-btn">Inquire This Color</span>
+                <span class="inquiry-btn">Inquire</span>
             </div>
         </div>
 
-        <div class="product-card" onclick="selectColor('Wine Red')">
-            <div class="product-img" style="background: #991b1b;">
-                <span style="color: white; font-weight: 600;">Wine Red</span>
-                <span class="color-tag">#21</span>
+        <div class="product-card" onclick="selectColor('Silver')">
+            <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
+                <img src="images/Silver.jpg" alt="Silver" style="width: 100%; height: 100%; object-fit: cover;">
+                <span class="color-tag">#18 Silver</span>
             </div>
             <div class="product-info">
-                <div class="product-name">Baby Sling Ring</div>
-                <div class="product-color">Wine Red</div>
-                <div class="product-price">$12.99 <span class="unit">/ pc</span></div>
-                <span class="inquiry-btn">Inquire This Color</span>
+                <span class="inquiry-btn">Inquire</span>
             </div>
         </div>
 
-        <div class="product-card" onclick="selectColor('Slate Blue')">
-            <div class="product-img" style="background: #475569;">
-                <span style="color: white; font-weight: 600;">Slate Blue</span>
-                <span class="color-tag">#22</span>
+        <div class="product-card" onclick="selectColor('Brown')">
+            <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
+                <img src="images/Brown.jpg" alt="Brown" style="width: 100%; height: 100%; object-fit: cover;">
+                <span class="color-tag">#19 Brown</span>
             </div>
             <div class="product-info">
-                <div class="product-name">Baby Sling Ring</div>
-                <div class="product-color">Slate Blue</div>
-                <div class="product-price">$12.99 <span class="unit">/ pc</span></div>
-                <span class="inquiry-btn">Inquire This Color</span>
+                <span class="inquiry-btn">Inquire</span>
             </div>
         </div>
 
-        <div class="product-card" onclick="selectColor('Peach')">
-            <div class="product-img" style="background: #fdba74;">
-                <span style="color: #7c2d12; font-weight: 600;">Peach</span>
-                <span class="color-tag">#23</span>
+        <div class="product-card" onclick="selectColor('Rose Gold')">
+            <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
+                <img src="images/Rose-Gold.jpg" alt="Rose Gold" style="width: 100%; height: 100%; object-fit: cover;">
+                <span class="color-tag">#20 Rose Gold</span>
             </div>
             <div class="product-info">
-                <div class="product-name">Baby Sling Ring</div>
-                <div class="product-color">Peach</div>
-                <div class="product-price">$12.99 <span class="unit">/ pc</span></div>
-                <span class="inquiry-btn">Inquire This Color</span>
+                <span class="inquiry-btn">Inquire</span>
+            </div>
+        </div>
+
+        <div class="product-card" onclick="selectColor('Aqua')">
+            <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
+                <img src="images/Aqua.jpg" alt="Aqua" style="width: 100%; height: 100%; object-fit: cover;">
+                <span class="color-tag">#21 Aqua</span>
+            </div>
+            <div class="product-info">
+                <span class="inquiry-btn">Inquire</span>
+            </div>
+        </div>
+
+        <div class="product-card" onclick="selectColor('Black')">
+            <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
+                <img src="images/Black.jpg" alt="Black" style="width: 100%; height: 100%; object-fit: cover;">
+                <span class="color-tag">#22 Black</span>
+            </div>
+            <div class="product-info">
+                <span class="inquiry-btn">Inquire</span>
+            </div>
+        </div>
+
+        <div class="product-card" onclick="selectColor('Dark Green')">
+            <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
+                <img src="images/Dark-Green.jpg" alt="Dark Green" style="width: 100%; height: 100%; object-fit: cover;">
+                <span class="color-tag">#23 Dark Green</span>
+            </div>
+            <div class="product-info">
+                <span class="inquiry-btn">Inquire</span>
             </div>
         </div>
     </div>
@@ -458,83 +438,58 @@
         <h2>📦 Request a Quote</h2>
         <p>Wholesale pricing available for bulk orders. Tell us what you need!</p>
 
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <!-- 表单改为 JS 异步提交 -->
+        <form id="contactForm">
             <div class="form-grid">
                 <div class="form-group">
                     <label>Your Name *</label>
-                    <input type="text" name="name" placeholder="John Smith" required>
+                    <input type="text" name="name" id="formName" placeholder="John Smith" required>
                 </div>
 
                 <div class="form-group">
                     <label>Email Address *</label>
-                    <input type="email" name="email" placeholder="john@example.com" required>
+                    <input type="email" name="email" id="formEmail" placeholder="john@example.com" required>
                 </div>
 
                 <div class="form-group">
                     <label>Company / Store</label>
-                    <input type="text" name="company" placeholder="Baby Store / Distributor">
+                    <input type="text" name="company" id="formCompany" placeholder="Baby Store / Distributor">
                 </div>
 
                 <div class="form-group">
                     <label>WhatsApp / Phone</label>
-                    <input type="text" name="phone" placeholder="+1 234 567 8900">
+                    <input type="text" name="phone" id="formPhone" placeholder="+1 234 567 8900">
                 </div>
 
                 <div class="form-group">
                     <label>Color Selection *</label>
                     <select name="color" id="colorSelect" required>
                         <option value="">Select a color</option>
-                        <option value="all">All 23 Colors</option>
-                        <option value="Midnight Black">#01 Midnight Black</option>
-                        <option value="Pure White">#02 Pure White</option>
-                        <option value="Soft Gray">#03 Soft Gray</option>
-                        <option value="Dusty Rose">#04 Dusty Rose</option>
-                        <option value="Blush Pink">#05 Blush Pink</option>
-                        <option value="Coral Red">#06 Coral Red</option>
-                        <option value="Burnt Orange">#07 Burnt Orange</option>
-                        <option value="Mustard Yellow">#08 Mustard Yellow</option>
-                        <option value="Sage Green">#09 Sage Green</option>
-                        <option value="Forest Green">#10 Forest Green</option>
-                        <option value="Teal Blue">#11 Teal Blue</option>
-                        <option value="Navy Blue">#12 Navy Blue</option>
-                        <option value="Sky Blue">#13 Sky Blue</option>
-                        <option value="Lavender Purple">#14 Lavender Purple</option>
-                        <option value="Deep Purple">#15 Deep Purple</option>
-                        <option value="Chocolate Brown">#16 Chocolate Brown</option>
-                        <option value="Tan Beige">#17 Tan Beige</option>
-                        <option value="Cream Ivory">#18 Cream Ivory</option>
-                        <option value="Terracotta">#19 Terracotta</option>
-                        <option value="Olive Green">#20 Olive Green</option>
-                        <option value="Wine Red">#21 Wine Red</option>
-                        <option value="Slate Blue">#22 Slate Blue</option>
-                        <option value="Peach">#23 Peach</option>
+                        <option value="all">Leave your message about Colors</option>
                     </select>
                 </div>
 
                 <div class="form-group">
                     <label>Quantity Needed *</label>
-                    <select name="quantity" required>
+                    <select name="quantity" id="formQuantity" required>
                         <option value="">Select quantity</option>
-                        <option value="sample">Sample (1-5 pcs)</option>
-                        <option value="small">Small Order (50-100 pcs)</option>
-                        <option value="medium">Medium Order (100-500 pcs)</option>
-                        <option value="large">Large Order (500-1000 pcs)</option>
-                        <option value="bulk">Bulk Order (1000+ pcs)</option>
+                        <option value="bulk">Leave your message about Quantity</option>
                     </select>
                 </div>
 
                 <div class="form-group full-width">
                     <label>Shipping Destination</label>
-                    <input type="text" name="destination" placeholder="Country / City for shipping quote">
+                    <input type="text" name="destination" id="formDestination" placeholder="Country / City for shipping quote">
                 </div>
 
                 <div class="form-group full-width">
                     <label>Message *</label>
-                    <textarea name="message" rows="4" placeholder="Tell us about your business, target market, packaging requirements, or any questions..." required></textarea>
+                    <textarea name="message" id="formMessage" rows="4" placeholder="Tell us about your business, target market, packaging requirements, or any questions..." required></textarea>
                 </div>
             </div>
 
-            <button type="submit" class="submit-btn">Send Inquiry →</button>
+            <button type="submit" class="submit-btn" id="submitBtn">Send Inquiry →</button>
+            <div id="statusMsg" class="status-msg"></div>
         </form>
 
         <div class="direct-contact">
@@ -547,42 +502,89 @@
 </div>
 
 <!-- 页脚 -->
-<footer>
+<<footer>
     <div class="footer-content">
         <div class="footer-brand">
-            <h3>👶 UNISOAR</h3>
-            <p>Professional baby carrier and parenting products manufacturer. Quality, safety, and comfort for every family.</p>
+            <h3>👶 UNISOAR Trading Co., Ltd.</h3>
+            <p>Beautiful,color not fade,durable; <br>Excellent quality,very strong and safe; <br>Made of light weight aluminium,one piece,no weld line; <br>Verified heavy metal and toxin free by SGS; <br>Verified crush and deformation testing by SGS；</p>
             <div class="footer-contact">
-                <a href="mailto:henry_zhao@foxmail.com">📧 henry_zhao@foxmail.com</a>
+                <a href="mailto:zhaojunjie@unisoar.com">📧 zhaojunjie@unisoar.com</a>
                 <a href="https://wa.me/8618636814859">📱 WhatsApp: +86 18636814859</a>
                 <a href="#">📍 Shanxi, China</a>
             </div>
         </div>
         <div class="footer-section">
-            <h4>Products</h4>
-            <a href="#">Baby Sling Ring</a>
-            <a href="#">Baby Wrap Carrier</a>
-            <a href="#">Baby Hip Seat</a>
-            <a href="#">Nursing Cover</a>
         </div>
         <div class="footer-section">
-            <h4>Business</h4>
-            <a href="#">Wholesale Inquiry</a>
-            <a href="#">OEM & Customization</a>
-            <a href="#">Distributor Program</a>
-            <a href="#">Sample Request</a>
         </div>
     </div>
     <div class="footer-bottom">
-        <p>© 2026 UNISOAR. All Rights Reserved. | Baby Sling Ring Manufacturer</p>
+        <p>© 2026 UNISOAR. All Rights Reserved. | Baby Sling Ring</p>
     </div>
 </footer>
 
 <script>
+    // Worker URL - 你的 Cloudflare Worker 地址
+    const WORKER_URL = 'https://muddy-limit-0d59.henry-zhao.workers.dev';
+
     function selectColor(colorName) {
         document.getElementById('colorSelect').value = colorName;
         document.getElementById('inquiry').scrollIntoView({ behavior: 'smooth' });
     }
+
+    // 表单提交处理
+    document.getElementById('contactForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const btn = document.getElementById('submitBtn');
+        const statusMsg = document.getElementById('statusMsg');
+        
+        // 获取表单数据
+        const formData = {
+            name: document.getElementById('formName').value.trim(),
+            email: document.getElementById('formEmail').value.trim(),
+            subject: 'Baby Sling Ring Inquiry - ' + document.getElementById('colorSelect').value,
+            message: `
+Company: ${document.getElementById('formCompany').value || 'Not provided'}
+Phone/WhatsApp: ${document.getElementById('formPhone').value || 'Not provided'}
+Color: ${document.getElementById('colorSelect').value}
+Quantity: ${document.getElementById('formQuantity').value}
+Destination: ${document.getElementById('formDestination').value || 'Not provided'}
+
+Message:
+${document.getElementById('formMessage').value}
+            `.trim()
+        };
+
+        // 禁用按钮
+        btn.disabled = true;
+        btn.textContent = 'Sending...';
+        statusMsg.className = 'status-msg';
+
+        try {
+            const response = await fetch(WORKER_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            });
+
+            const result = await response.json();
+
+            if (response.ok) {
+                statusMsg.className = 'status-msg show success';
+                statusMsg.textContent = '✓ Inquiry sent successfully! We will contact you soon.';
+                document.getElementById('contactForm').reset();
+            } else {
+                throw new Error(result.error || 'Failed to send inquiry');
+            }
+        } catch (error) {
+            statusMsg.className = 'status-msg show error';
+            statusMsg.textContent = '✗ ' + error.message + '. Please try again or contact us via WhatsApp.';
+        } finally {
+            btn.disabled = false;
+            btn.textContent = 'Send Inquiry →';
+        }
+    });
 </script>
 
 </body>
