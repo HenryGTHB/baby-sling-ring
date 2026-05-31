@@ -63,20 +63,6 @@
         .form-group.full-width { grid-column: 1 / -1; }
         .submit-btn { width: 100%; padding: 1rem; background: #e11d48; color: white; border: none; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: background 0.2s; }
         .submit-btn:hover { background: #be123c; }
-        .submit-btn:disabled { opacity: 0.6; cursor: not-allowed; }
-
-        /* 状态提示 */
-        .status-msg {
-            margin-top: 1rem;
-            padding: 1rem;
-            border-radius: 8px;
-            font-size: 0.95rem;
-            text-align: center;
-            display: none;
-        }
-        .status-msg.show { display: block; }
-        .status-msg.success { background: #dcfce7; color: #166534; border: 1px solid #86efac; }
-        .status-msg.error { background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
 
         .direct-contact { text-align: center; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid #f1f5f9; }
         .direct-contact p { color: #64748b; font-size: 0.9rem; margin-bottom: 0.75rem; }
@@ -106,7 +92,7 @@
 </head>
 <body>
 
-<<nav>
+<nav>
     <div class="nav-container">
         <a href="#" class="logo">
             <div class="logo-icon">👶</div>
@@ -161,8 +147,12 @@
     </div>
     <div class="products-grid">
         <div class="product-card" onclick="selectColor('DIY Wrap and Carrier')">
+            <!-- 修改点：使用 img 标签替换纯背景色 div -->
             <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
-                <img src="images/DIY Wrap and Carrier.jpg" alt="DIY Wrap and Carrier" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="images/DIY Wrap and Carrier.jpg" 
+                     alt="DIY Wrap and Carrier" 
+                     style="width: 100%; height: 100%; object-fit: cover;">
+                <!-- 可选：保留颜色标签在图片右上角 -->
                 <span class="color-tag">#DIY Wrap Carrier</span>
             </div>
             <div class="product-info">
@@ -170,9 +160,11 @@
             </div>
         </div>
 
-        <div class="product-card" onclick="selectColor('SGS1')">
+       <div class="product-card" onclick="selectColor('SGS1')">
             <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
-                <img src="images/baby sling rings 1.jpg" alt="SGS1" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="images/baby sling rings 1.jpg" 
+                     alt="SGS1" 
+                     style="width: 100%; height: 100%; object-fit: cover;">
                 <span class="color-tag">#SGS RoHS Test: Lead and Nickle Free</span>
             </div>
             <div class="product-info">
@@ -180,9 +172,11 @@
             </div>
         </div>
 
-        <div class="product-card" onclick="selectColor('SGS2')">
+       <div class="product-card" onclick="selectColor('SGS2')">
             <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
-                <img src="images/baby sling rings 2.jpg" alt="SGS2" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="images/baby sling rings 2.jpg" 
+                     alt="SGS2" 
+                     style="width: 100%; height: 100%; object-fit: cover;">
                 <span class="color-tag">#SGS Tensile Test:Max Force 11.80KN</span>
             </div>
             <div class="product-info">
@@ -190,9 +184,11 @@
             </div>
         </div>
 
-        <div class="product-card" onclick="selectColor('Size')">
+       <div class="product-card" onclick="selectColor('Size')">
             <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
-                <img src="images/Size.jpg" alt="Size" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="images/Size.jpg" 
+                     alt="Size" 
+                     style="width: 100%; height: 100%; object-fit: cover;">
                 <span class="color-tag">#Size: Large Size inner 3 inch<br>Medium Size inner 2.5 inch<br>Small Size inner 2 inch</span>
             </div>
             <div class="product-info">
@@ -200,9 +196,11 @@
             </div>
         </div>
 
-        <div class="product-card" onclick="selectColor('Color')">
+       <div class="product-card" onclick="selectColor('Color')">
             <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
-                <img src="images/Color.jpg" alt="Color" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="images/Color.jpg" 
+                     alt="Color" 
+                     style="width: 100%; height: 100%; object-fit: cover;">
                 <span class="color-tag">#Colors</span>
             </div>
             <div class="product-info">
@@ -211,8 +209,12 @@
         </div>
 
         <div class="product-card" onclick="selectColor('Gold')">
+            <!-- 修改点：使用 img 标签替换纯背景色 div -->
             <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
-                <img src="images/Gold.jpg" alt="Gold" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="images/Gold.jpg" 
+                     alt="Gold" 
+                     style="width: 100%; height: 100%; object-fit: cover;">
+                <!-- 可选：保留颜色标签在图片右上角 -->
                 <span class="color-tag">#01 Gold</span>
             </div>
             <div class="product-info">
@@ -222,7 +224,9 @@
         
         <div class="product-card" onclick="selectColor('Pink')">
             <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
-                <img src="images/Pink.jpg" alt="Pink" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="images/Pink.jpg" 
+                     alt="Pink" 
+                     style="width: 100%; height: 100%; object-fit: cover;">
                 <span class="color-tag">#02 Pink</span>
             </div>
             <div class="product-info">
@@ -232,7 +236,9 @@
 
         <div class="product-card" onclick="selectColor('Shinny Gold')">
             <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
-                <img src="images/Shinny-Gold.jpg" alt="Shinny Gold" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="images/Shinny-Gold.jpg" 
+                     alt="Shinny Gold" 
+                     style="width: 100%; height: 100%; object-fit: cover;">
                 <span class="color-tag">#03 Shinny Gold</span>
             </div>
             <div class="product-info">
@@ -242,7 +248,9 @@
 
         <div class="product-card" onclick="selectColor('Yellow')">
             <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
-                <img src="images/Yellow.jpg" alt="Yellow" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="images/Yellow.jpg" 
+                     alt="Yellow" 
+                     style="width: 100%; height: 100%; object-fit: cover;">
                 <span class="color-tag">#04 Yellow</span>
             </div>
             <div class="product-info">
@@ -252,7 +260,9 @@
 
         <div class="product-card" onclick="selectColor('Red')">
             <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
-                <img src="images/Red.jpg" alt="Red" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="images/Red.jpg" 
+                     alt="Red" 
+                     style="width: 100%; height: 100%; object-fit: cover;">
                 <span class="color-tag">#06 Red</span>
             </div>
             <div class="product-info">
@@ -262,7 +272,9 @@
 
         <div class="product-card" onclick="selectColor('Purple')">
             <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
-                <img src="images/Purple.jpg" alt="Purple" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="images/Purple.jpg" 
+                     alt="Purple" 
+                     style="width: 100%; height: 100%; object-fit: cover;">
                 <span class="color-tag">#07 Purple</span>
             </div>
             <div class="product-info">
@@ -272,7 +284,9 @@
 
         <div class="product-card" onclick="selectColor('Grey')">
             <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
-                <img src="images/Grey.jpg" alt="Grey" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="images/Grey.jpg" 
+                     alt="Grey" 
+                     style="width: 100%; height: 100%; object-fit: cover;">
                 <span class="color-tag">#08 Grey</span>
             </div>
             <div class="product-info">
@@ -282,7 +296,9 @@
 
         <div class="product-card" onclick="selectColor('Shinny Silver')">
             <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
-                <img src="images/Shinny-Silver.jpg" alt="Shinny Silver" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="images/Shinny-Silver.jpg" 
+                     alt="Shinny Silver" 
+                     style="width: 100%; height: 100%; object-fit: cover;">
                 <span class="color-tag">#09 Shinny Silver</span>
             </div>
             <div class="product-info">
@@ -292,7 +308,9 @@
 
         <div class="product-card" onclick="selectColor('Dark Grey')">
             <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
-                <img src="images/Dark-Grey.jpg" alt="Dark Grey" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="images/Dark-Grey.jpg" 
+                     alt="Dark Grey" 
+                     style="width: 100%; height: 100%; object-fit: cover;">
                 <span class="color-tag">#10 Dark Grey</span>
             </div>
             <div class="product-info">
@@ -302,7 +320,9 @@
 
         <div class="product-card" onclick="selectColor('Lime')">
             <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
-                <img src="images/Lime.jpg" alt="Lime" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="images/Lime.jpg" 
+                     alt="Lime" 
+                     style="width: 100%; height: 100%; object-fit: cover;">
                 <span class="color-tag">#11 Lime</span>
             </div>
             <div class="product-info">
@@ -312,7 +332,9 @@
 
         <div class="product-card" onclick="selectColor('Green')">
             <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
-                <img src="images/Green.jpg" alt="Green" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="images/Green.jpg" 
+                     alt="Green" 
+                     style="width: 100%; height: 100%; object-fit: cover;">
                 <span class="color-tag">#12 Green</span>
             </div>
             <div class="product-info">
@@ -322,7 +344,9 @@
 
         <div class="product-card" onclick="selectColor('Light Pink')">
             <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
-                <img src="images/Light-Pink.jpg" alt="Light Pink" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="images/Light-Pink.jpg" 
+                     alt="Light Pink" 
+                     style="width: 100%; height: 100%; object-fit: cover;">
                 <span class="color-tag">#13 Light Pink</span>
             </div>
             <div class="product-info">
@@ -332,7 +356,9 @@
 
         <div class="product-card" onclick="selectColor('Light Aqua')">
             <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
-                <img src="images/Light-Aqua.jpg" alt="Light Aqua" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="images/Light-Aqua.jpg" 
+                     alt="Light Aqua" 
+                     style="width: 100%; height: 100%; object-fit: cover;">
                 <span class="color-tag">#14 Light Aqua</span>
             </div>
             <div class="product-info">
@@ -342,7 +368,9 @@
 
         <div class="product-card" onclick="selectColor('Orange')">
             <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
-                <img src="images/Orange.jpg" alt="Orange" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="images/Orange.jpg" 
+                     alt="Orange" 
+                     style="width: 100%; height: 100%; object-fit: cover;">
                 <span class="color-tag">#15 Orange</span>
             </div>
             <div class="product-info">
@@ -352,7 +380,9 @@
 
         <div class="product-card" onclick="selectColor('Y Rose Gold')">
             <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
-                <img src="images/Y-Rose-Gold.jpg" alt="Y Rose Gold" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="images/Y-Rose-Gold.jpg" 
+                     alt="Y Rose Gold" 
+                     style="width: 100%; height: 100%; object-fit: cover;">
                 <span class="color-tag">#16 Y Rose Gold</span>
             </div>
             <div class="product-info">
@@ -362,7 +392,9 @@
 
         <div class="product-card" onclick="selectColor('Blue')">
             <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
-                <img src="images/Blue.jpg" alt="Blue" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="images/Blue.jpg" 
+                     alt="Blue" 
+                     style="width: 100%; height: 100%; object-fit: cover;">
                 <span class="color-tag">#17 Blue</span>
             </div>
             <div class="product-info">
@@ -372,7 +404,9 @@
 
         <div class="product-card" onclick="selectColor('Silver')">
             <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
-                <img src="images/Silver.jpg" alt="Silver" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="images/Silver.jpg" 
+                     alt="Silver" 
+                     style="width: 100%; height: 100%; object-fit: cover;">
                 <span class="color-tag">#18 Silver</span>
             </div>
             <div class="product-info">
@@ -382,7 +416,9 @@
 
         <div class="product-card" onclick="selectColor('Brown')">
             <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
-                <img src="images/Brown.jpg" alt="Brown" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="images/Brown.jpg" 
+                     alt="Brown" 
+                     style="width: 100%; height: 100%; object-fit: cover;">
                 <span class="color-tag">#19 Brown</span>
             </div>
             <div class="product-info">
@@ -392,7 +428,9 @@
 
         <div class="product-card" onclick="selectColor('Rose Gold')">
             <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
-                <img src="images/Rose-Gold.jpg" alt="Rose Gold" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="images/Rose-Gold.jpg" 
+                     alt="Rose Gold" 
+                     style="width: 100%; height: 100%; object-fit: cover;">
                 <span class="color-tag">#20 Rose Gold</span>
             </div>
             <div class="product-info">
@@ -402,7 +440,9 @@
 
         <div class="product-card" onclick="selectColor('Aqua')">
             <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
-                <img src="images/Aqua.jpg" alt="Aqua" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="images/Aqua.jpg" 
+                     alt="Aqua" 
+                     style="width: 100%; height: 100%; object-fit: cover;">
                 <span class="color-tag">#21 Aqua</span>
             </div>
             <div class="product-info">
@@ -412,7 +452,9 @@
 
         <div class="product-card" onclick="selectColor('Black')">
             <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
-                <img src="images/Black.jpg" alt="Black" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="images/Black.jpg" 
+                     alt="Black" 
+                     style="width: 100%; height: 100%; object-fit: cover;">
                 <span class="color-tag">#22 Black</span>
             </div>
             <div class="product-info">
@@ -422,7 +464,9 @@
 
         <div class="product-card" onclick="selectColor('Dark Green')">
             <div class="product-img-container" style="position: relative; height: 240px; overflow: hidden; border-radius: 8px;">
-                <img src="images/Dark-Green.jpg" alt="Dark Green" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="images/Dark-Green.jpg" 
+                     alt="Dark Green" 
+                     style="width: 100%; height: 100%; object-fit: cover;">
                 <span class="color-tag">#23 Dark Green</span>
             </div>
             <div class="product-info">
@@ -438,27 +482,26 @@
         <h2>📦 Request a Quote</h2>
         <p>Wholesale pricing available for bulk orders. Tell us what you need!</p>
 
-        <!-- 表单改为 JS 异步提交 -->
-        <form id="contactForm">
+        <form action="https://formspree.io/f/xzdwqjkq" method="POST">
             <div class="form-grid">
                 <div class="form-group">
                     <label>Your Name *</label>
-                    <input type="text" name="name" id="formName" placeholder="John Smith" required>
+                    <input type="text" name="name" placeholder="John Smith" required>
                 </div>
 
                 <div class="form-group">
                     <label>Email Address *</label>
-                    <input type="email" name="email" id="formEmail" placeholder="john@example.com" required>
+                    <input type="email" name="email" placeholder="john@example.com" required>
                 </div>
 
                 <div class="form-group">
                     <label>Company / Store</label>
-                    <input type="text" name="company" id="formCompany" placeholder="Baby Store / Distributor">
+                    <input type="text" name="company" placeholder="Baby Store / Distributor">
                 </div>
 
                 <div class="form-group">
                     <label>WhatsApp / Phone</label>
-                    <input type="text" name="phone" id="formPhone" placeholder="+1 234 567 8900">
+                    <input type="text" name="phone" placeholder="+1 234 567 8900">
                 </div>
 
                 <div class="form-group">
@@ -471,7 +514,7 @@
 
                 <div class="form-group">
                     <label>Quantity Needed *</label>
-                    <select name="quantity" id="formQuantity" required>
+                    <select name="quantity" required>
                         <option value="">Select quantity</option>
                         <option value="bulk">Leave your message about Quantity</option>
                     </select>
@@ -479,17 +522,16 @@
 
                 <div class="form-group full-width">
                     <label>Shipping Destination</label>
-                    <input type="text" name="destination" id="formDestination" placeholder="Country / City for shipping quote">
+                    <input type="text" name="destination" placeholder="Country / City for shipping quote">
                 </div>
 
                 <div class="form-group full-width">
                     <label>Message *</label>
-                    <textarea name="message" id="formMessage" rows="4" placeholder="Tell us about your business, target market, packaging requirements, or any questions..." required></textarea>
+                    <textarea name="message" rows="4" placeholder="Tell us about your business, target market, packaging requirements, or any questions..." required></textarea>
                 </div>
             </div>
 
-            <button type="submit" class="submit-btn" id="submitBtn">Send Inquiry →</button>
-            <div id="statusMsg" class="status-msg"></div>
+            <button type="submit" class="submit-btn">Send Inquiry →</button>
         </form>
 
         <div class="direct-contact">
@@ -502,7 +544,7 @@
 </div>
 
 <!-- 页脚 -->
-<<footer>
+<footer>
     <div class="footer-content">
         <div class="footer-brand">
             <h3>👶 UNISOAR Trading Co., Ltd.</h3>
@@ -524,67 +566,10 @@
 </footer>
 
 <script>
-    // Worker URL - 你的 Cloudflare Worker 地址
-    const WORKER_URL = 'https://muddy-limit-0d59.henry-zhao.workers.dev';
-
     function selectColor(colorName) {
         document.getElementById('colorSelect').value = colorName;
         document.getElementById('inquiry').scrollIntoView({ behavior: 'smooth' });
     }
-
-    // 表单提交处理
-    document.getElementById('contactForm').addEventListener('submit', async function(e) {
-        e.preventDefault();
-        
-        const btn = document.getElementById('submitBtn');
-        const statusMsg = document.getElementById('statusMsg');
-        
-        // 获取表单数据
-        const formData = {
-            name: document.getElementById('formName').value.trim(),
-            email: document.getElementById('formEmail').value.trim(),
-            subject: 'Baby Sling Ring Inquiry - ' + document.getElementById('colorSelect').value,
-            message: `
-Company: ${document.getElementById('formCompany').value || 'Not provided'}
-Phone/WhatsApp: ${document.getElementById('formPhone').value || 'Not provided'}
-Color: ${document.getElementById('colorSelect').value}
-Quantity: ${document.getElementById('formQuantity').value}
-Destination: ${document.getElementById('formDestination').value || 'Not provided'}
-
-Message:
-${document.getElementById('formMessage').value}
-            `.trim()
-        };
-
-        // 禁用按钮
-        btn.disabled = true;
-        btn.textContent = 'Sending...';
-        statusMsg.className = 'status-msg';
-
-        try {
-            const response = await fetch(WORKER_URL, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(formData),
-            });
-
-            const result = await response.json();
-
-            if (response.ok) {
-                statusMsg.className = 'status-msg show success';
-                statusMsg.textContent = '✓ Inquiry sent successfully! We will contact you soon.';
-                document.getElementById('contactForm').reset();
-            } else {
-                throw new Error(result.error || 'Failed to send inquiry');
-            }
-        } catch (error) {
-            statusMsg.className = 'status-msg show error';
-            statusMsg.textContent = '✗ ' + error.message + '. Please try again or contact us via WhatsApp.';
-        } finally {
-            btn.disabled = false;
-            btn.textContent = 'Send Inquiry →';
-        }
-    });
 </script>
 
 </body>
